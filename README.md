@@ -19,6 +19,14 @@ Due to this behaviour the script must run as root user to be able to modify the 
 
 Either run `privoxy-blocklist.sh` manually with root privileges (e.g., `sudo privoxy-blocklist.sh`) or via root cronjob.
 
+1. Ssh into OpenWrt
+2. Go to /etc/privoxy
+3. Download privoxy-blocklist.sh
+4. chmod +x privoxy-blocklist.sh
+5. Run it once in order to create blocklist.conf
+6. remove # from privoxy_user, privoxy_group and privoxy_conf
+7. Run it again
+
 ## Development
 
 ### Release
