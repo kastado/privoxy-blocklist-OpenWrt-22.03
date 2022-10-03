@@ -73,7 +73,7 @@ function prepare() {
                 SCRIPTCONF="/usr/local/etc/privoxy-blocklist.conf"
                 ;;
             *)
-                SCRIPTCONF="/etc/privoxy-blocklist.conf"
+                SCRIPTCONF="/etc/privoxy/blocklist.conf"
                 ;;
         esac
         if [ -f "/etc/conf.d/privoxy-blacklist" ]; then
@@ -102,7 +102,7 @@ INIT_CONF="/etc/conf.d/privoxy"
 # !! These values will be overwritten by INIT_CONF when exists !!
 #PRIVOXY_USER="privoxy"
 #PRIVOXY_GROUP="root"
-#PRIVOXY_CONF="/etc/privoxy/config"
+#PRIVOXY_CONF="/etc/config/privoxy"
 
 # name for lock file (default: script name)
 TMPNAME="\$(basename "\$(readlink -f "\${0}")")"
